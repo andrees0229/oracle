@@ -1,0 +1,18 @@
+/* CARGA DATOS EN LA TABLA amenity */
+SELECT * 
+FROM amenity;
+
+INSERT INTO amenity(ID, NAME)
+VALUES ('1', 'TEXTO 1');
+
+INSERT INTO amenity(ID, NAME)
+VALUES ('2', 'TEXTO 2');
+
+INSERT INTO amenity(ID, NAME)
+VALUES ('3', 'TEXTO 3');
+
+INSERT INTO amenity(ID, NAME)
+VALUES ('4', 'TEXTO 4');
+
+INSERT INTO amenity(ID, NAME)
+VALUES ('5', 'TEXTO 5');

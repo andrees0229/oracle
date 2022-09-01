@@ -1,0 +1,18 @@
+/* CARGA DATOS EN LA TABLA review*/
+SELECT * 
+FROM review;
+
+INSERT INTO review(ID, USER_ID, PLACE_ID, TEXT)
+VALUES ('1', '1', '1', 'TEXT 1');
+
+INSERT INTO review(ID, USER_ID, PLACE_ID, TEXT)
+VALUES ('2', '2', '2', 'TEXT 2');
+
+INSERT INTO review(ID, USER_ID, PLACE_ID, TEXT)
+VALUES ('3', '3', '3', 'TEXT 3');
+
+INSERT INTO review(ID, USER_ID, PLACE_ID, TEXT)
+VALUES ('4', '4', '4', 'TEXT 4');
+
+INSERT INTO review(ID, USER_ID, PLACE_ID, TEXT)
+VALUES ('5', '5', '5', 'TEXT 5');

@@ -1,0 +1,18 @@
+/* CARGA DATOS EN LA TABLA state */
+SELECT * 
+FROM state;
+
+INSERT INTO state(ID, NAME)
+VALUES ('1', 'ESTADO 1');
+
+INSERT INTO state(ID, NAME)
+VALUES ('2', 'ESTADO 2');
+
+INSERT INTO state(ID, NAME)
+VALUES ('3', 'ESTADO 3');
+
+INSERT INTO state(ID, NAME)
+VALUES ('4', 'ESTADO 4');
+
+INSERT INTO state(ID, NAME)
+VALUES ('5', 'ESTADO 5');
