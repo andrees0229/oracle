@@ -4,12 +4,12 @@ FROM employees e, job_history j
 WHERE e.employee_id = j.employee_id;
 
 /* b) Averig�e y proyecte cuales son los empleados que solo hayan tenido un cargo o trabajo (JOB). */
-SELECT * FROM employees
-NATURAL JOIN (SELECT employee_id FROM employees
-                MINUS
-                SELECT distinct e.employee_id
-                FROM employees e, job_history j
-                WHERE e.employee_id = j.employee_id);
+SELECT employeed_id FROM employees
+MINUS
+SELECT distinct employee_id
+FROM job_history j;
+
+SELECT distinct job_history.employee_id FROM job_history;
 
 /* c) Averig�e y proyecte cu�l es la cantidad de trabajos que ha tenido cada uno de los empleados. */
 Select job_history.employee_id, COUNT(job_id) as jobs  
@@ -53,13 +53,6 @@ WHERE EXTRACT(MONTH FROM SYSDATE) = EXTRACT(MONTH FROM hire_date);
       [10,15) a�os 3
       [15, ?) a�os 4 */
       
-/* i) Determine las fechas de cumplimiento de aniversario de contrataci�n de cada uno de los funcionarios. Con estas fechas presente en un listado de fechas de 
-     aniversarios de los empleados a ocurrir en el a�o inmediatamente siguiente. Se necesita conocer el ID, el nombre, la fecha de ingreso, la fecha en que cumplir� 
-     a�os y la fecha del viernes inmediatamente siguiente, que es el d�a de la celebraci�n.hire */
-     
-/* j) Determine, para un a�o completo, el calendario mensual de pagos de bonificaciones por antig�edad a los empleados. El horizonte de tiempo a presentar 
-      va de enero a diciembre. El bono de antig�edad se paga mes vencido, es decir, el mes siguiente al mes en el que se cumple el aniversario laboral. La informaci�n se 
-      espera tabular, teniendo en las filas los departamentos, identificados por su id, y en las columnas los meses. */
 
 /* k) Determine como y que hace el siguiente �Query�. Tambi�n identifique opci�n de mejora, si la hay: */
 select Exp(Sum(LN(level))) factorial
