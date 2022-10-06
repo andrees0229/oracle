@@ -52,6 +52,9 @@ WHERE EXTRACT(MONTH FROM SYSDATE) = EXTRACT(MONTH FROM hire_date);
       [5, 10) a�os 2
       [10,15) a�os 3
       [15, ?) a�os 4 */
+SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY, 
+(CASE experiencia WHEN experiencia < 5 THEN 
+SELECT FLOOR(months_between(SYSDATE, HIRE_DATE)/12) as experiencia FROM employees;      
       
 
 /* k) Determine como y que hace el siguiente �Query�. Tambi�n identifique opci�n de mejora, si la hay: */
